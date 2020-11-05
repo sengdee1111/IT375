@@ -1,0 +1,15 @@
+<h1><center>Food deliverry</center></h1>
+<ul class="restaurants">
+    <% data.foods.forEach((data)=>{ %>
+        <li class="restaurants-item">
+            <img src="<%= data.imageURL %>"class="restaurants-item-image">
+            <div class="restaurants-item-name"><%= data.ProductName %></div>
+            <div class="restaurants-item-name">ส่วนประกอบ<%= data.Ingredient %></div>
+            <div class="restaurants-item-name">ไซส์ <%= data.Size %></div>
+            <div class="restaurants-item-name">ราคา<%= data.Price %>บาท</div>
+            <div class="restaurants-item-name"><%= data.imageUR%></div>
+            <small class="restaurants-item-type"></small>
+        </li>
+        <% })  %>
+    
+</ul>
